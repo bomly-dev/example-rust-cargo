@@ -6,13 +6,9 @@ edition = "2021"
 [dependencies]
 # chrono 0.4.19 depends on time 0.1.44 (RUSTSEC-2020-0071, RUSTSEC-2020-0159)
 chrono = "0.4.19"
-# serde_json depends on serde (transitive)
+time = "0.1.44"
+serde = "1.0.210"
 serde_json = "1.0.127"
-# hyper 0.13.0: RUSTSEC-2021-0020 (headers)
-hyper = "0.13.0"
-# openssl-sys and openssl bindings
-openssl = "0.10.48"
 
 [dev-dependencies]
 tempfile = "3.8.1"
-tokio = { version = "1.0", features = ["full"] }
