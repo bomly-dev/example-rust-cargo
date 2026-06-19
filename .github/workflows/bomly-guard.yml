@@ -22,6 +22,7 @@ jobs:
       - name: Guard dependency changes
         uses: bomly-dev/bomly-guard@v1
         with:
+          log-level: debug
           ecosystems: rust
           fail-on: high
           comment-summary-in-pr: always
