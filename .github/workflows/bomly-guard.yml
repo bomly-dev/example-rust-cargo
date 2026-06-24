@@ -24,5 +24,6 @@ jobs:
         with:
           log-level: debug
           ecosystems: rust
+          matchers: +scorecard
           fail-on: any
           comment-summary-in-pr: always
